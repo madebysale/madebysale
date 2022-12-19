@@ -1,6 +1,6 @@
 {
   "name": "POS",
-  "homepage": "https://madebysale.github.io/madebysale",
+  "homepage": "https://madebysale.github.io",
   "version": "3.0.0",
   "private": true,
   "dependencies": {
@@ -82,10 +82,10 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "GENERATE_SOURCEMAP=false react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "ghp": "react-scripts build && gh-pages -d build"
+    "eject": "react-scripts eject"
+    
   },
   "eslintConfig": {
     "extends": "react-app"
