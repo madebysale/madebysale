@@ -1,5 +1,6 @@
 {
   "name": "POS",
+  "homepage": "https://madebysale.github.io/madebysale",
   "version": "3.0.0",
   "private": true,
   "dependencies": {
@@ -78,6 +79,8 @@
     "yup": "^0.32.11"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "GENERATE_SOURCEMAP=false react-scripts build",
     "test": "react-scripts test",
