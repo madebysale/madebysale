@@ -54,7 +54,7 @@
                       const validationSchema = Yup.object().shape({
                         Add_Product: Yup.string()
                        
-                          .required('Add_Product is required!'),
+                          .required('Add Product is required!'),
                       
                           Style: Yup.string()
                          
@@ -178,18 +178,19 @@
                                       <Grid item xs={12}>
                   {/* <DDbutton /> */}
 
-                  <LoadingButton
+                  <LoadingButton 
+                    style={{margin: "10px" }}
                     variant="contained"
                     type="submit"
                     loading={loading}
                     className={classes.btn2}
                   >
-                    Submit
-                  </LoadingButton>
+                         Submit
+                       </LoadingButton>
 
-                  <Button variant="contained" className={classes.btn3}>
-                    Reset
-                  </Button>
+                     <Button variant="contained" className={classes.btn3}>
+                             Reset
+                     </Button>
                 </Grid>
                                 
                                     </Grid>

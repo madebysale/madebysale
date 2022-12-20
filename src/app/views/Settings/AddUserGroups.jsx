@@ -69,13 +69,13 @@ const validationSchema = Yup.object().shape({
   
 
     Produc_to_buy: Yup.string()
-    .min(6, 'Produc_to_buy must be 6 character length')
-    .required('Produc_to_buy per line is required!'),
+    // .min(6, 'Product to buy must be 6 character length')
+    .required('Product to buy is required!'),
 
     Product_to_get: Yup.string()
-    .min(6, 'Product_to_get must be 6 character length')
+    // .min(6, 'Product to get must be 6 character length')
     
-    .required('Product_to_get per line is required!'),
+    .required('Product to get is required!'),
 
     Description: Yup.string(),
 });

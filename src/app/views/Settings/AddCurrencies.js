@@ -58,14 +58,14 @@ const validationSchema = Yup.object().shape({
         
    Currency_Name: Yup.string()
     .min(3, 'Currency Name must be 3 character length')
-    .required('Currency Name per line is required!'),
+    .required('Currency Name is required!'),
 
     Symbol: Yup.string()
   
-    .required('Symbol per line is required!'),
+    .required('Symbol is required!'),
 
     Exchange_Rate: Yup.string()
-    .required('Exchange Rate per line is required!'),
+    .required('Exchange Rate is required!'),
 
 
 });
@@ -128,8 +128,8 @@ const AddCurrencies = (props) => {
                       value: values.start_Date,
                     
                       onChange: handleChange,
-                      helperText: touched.Currency_Name && errors.start_Date,
-                      error: Boolean(errors.Currency_Name && touched.start_Date),
+                      helperText: touched.Currency_Name && errors.Currency_Name,
+                      error: Boolean(errors.Currency_Name && touched.Currency_Name),
                     }}
                   />
                 </Grid>

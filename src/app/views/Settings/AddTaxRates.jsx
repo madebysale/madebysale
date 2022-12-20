@@ -60,11 +60,11 @@ const validationSchema = Yup.object().shape({
     
     Rate: Yup.string()
    
-    .required('Rate per line is required!'),
+    .required('Rate is required!'),
 
     Type: Yup.string()
    
-    .required('Type per line is required!'),
+    .required('Type is required!'),
 
 
 });

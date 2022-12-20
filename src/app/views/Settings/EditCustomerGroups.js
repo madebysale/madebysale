@@ -41,24 +41,23 @@ const handleChange = (event) => {
 
 // inital login credentials
 const initialValues = {
-  Currency_Code: '',
-  Currency_Name: '',
-  Symbol: '',
-  Exchange_Rate: '',
+  Group_Name: '',
+  Group_Percentage: '',
+
  
 
 };
 
 // form field validation schema
 const validationSchema = Yup.object().shape({
-  Currency_Code: Yup.string()
-    .min(3, 'Currency Code must be 3 character length')
-    .required('Currency Code is required!'),
+  Group_Name: Yup.string()
+    .min(3, 'Group Name must be 3 character length')
+    .required('Group Name is required!'),
 
         
-   Currency_Name: Yup.string()
-    .min(3, 'Currency Name must be 3 character length')
-    .required('Currency Name per line is required!'),
+    Group_Percentage: Yup.string()
+    // .min(3, 'Group Percentage must be 3 character length')
+    .required('Group Percentage is required!'),
 
 
 
@@ -101,8 +100,8 @@ const EditCustomerGroups = (props) => {
                   <SimpleFormNew
                     props={{
                       type: 'text',
-                      name: 'Group Name',
-                      label: 'Group_Name',
+                      name: 'Group_Name',
+                      label: 'Group Name',
                       onBlur: handleBlur,
                       value: values.Group_Name,
                       onChange: handleChange,

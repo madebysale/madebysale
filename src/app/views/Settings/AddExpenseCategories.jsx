@@ -98,13 +98,13 @@ const AddExpenseCategories = (props) => {
                   <SimpleFormNew
                     props={{
                       type: 'text',
-                      name: 'Category_code',
-                      label: 'Category code',
+                      name: 'Category_Code',
+                      label: 'Category Code',
                       onBlur: handleBlur,
-                      value: values.Group_Name,
+                      value: values.Category_Code,
                       onChange: handleChange,
-                      helperText: touched.Category_code && errors.Category_code,
-                      error: Boolean(errors.Category_code && touched.Category_code),
+                      helperText: touched.Category_Code && errors.Category_Code,
+                      error: Boolean(errors.Category_Code && touched.Category_Code),
                     }}
                   />
                 </Grid>

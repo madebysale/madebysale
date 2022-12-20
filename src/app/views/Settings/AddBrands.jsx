@@ -57,13 +57,13 @@ const validationSchema = Yup.object().shape({
 
   Name: Yup.string()
   
-    .required('Name per line is required!'),
+    .required('Name is required!'),
 
     Slug: Yup.string()
-    .required('Slug per line is required!'),
+    .required('Slug is required!'),
 
     Description: Yup.string()
-    .required('Name per line is required!'),
+    .required('Name is required!'),
 });
 
 const AddBrands = (props) => {

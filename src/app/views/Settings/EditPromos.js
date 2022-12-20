@@ -60,17 +60,17 @@ const validationSchema = Yup.object().shape({
 
     start_Date: Yup.date(),
     End_Date: Yup.date().min(
-        Yup.ref('start_Date'),
+        Yup.ref('start Date'),
         "End date can't be before Start date"
       ),
      Produc_to_buy: Yup.string()
-    .min(6, 'Produc_to_buy must be 6 character length')
-    .required('Produc_to_buy per line is required!'),
+    .min(6, 'Product to buy must be 6 character length')
+    .required('Produc to buy is required!'),
 
     Product_to_get: Yup.string()
-    .min(6, 'Product_to_get must be 6 character length')
+    .min(6, 'Product to get must be 6 character length')
     
-    .required('Product_to_get per line is required!'),
+    .required('Product to get is required!'),
 
     Description: Yup.string(),
 });

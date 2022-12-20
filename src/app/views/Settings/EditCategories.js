@@ -67,7 +67,7 @@ const validationSchema = Yup.object().shape({
 
     Description: Yup.string()
     .min(6, 'Description must be 6 character length')
-    .required('Description per line is required!'),
+    .required('Description is required!'),
 
  
 

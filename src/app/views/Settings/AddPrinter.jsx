@@ -68,7 +68,7 @@ const validationSchema = Yup.object().shape({
     .required('Characters per line is required!'),
 
   IPAddress: Yup.string()
-    .min(6, 'IPAddress must be 6 character length')
+    // .min(5, 'IPAddress must be 6 character length')
     .matches(/(^(\d{1,3}\.){3}(\d{1,3})$)/, {
       message: 'Invalid IP address',
       excludeEmptyString: true

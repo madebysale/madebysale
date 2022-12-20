@@ -55,7 +55,7 @@ const validationSchema = Yup.object().shape({
 
     Unit_Name: Yup.string()
   
-    .required('Unit Name per line is required!'),
+    .required('Unit Name is required!'),
 
   
 });

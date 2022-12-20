@@ -41,7 +41,7 @@ const handleChange = (event) => {
 
 // inital login credentials
 const initialValues = {
-  Currency_Code: '',
+  Group_Name: '',
 
 
 };
@@ -49,8 +49,8 @@ const initialValues = {
 // form field validation schema
 const validationSchema = Yup.object().shape({
   Group_Name: Yup.string()
-    .min(6, 'Currency Code must be 3 character length')
-    .required('Currency Code is required!'),
+    .min(3, 'Group Name must be 3 character length')
+    .required('Group Name is required!'),
 
 
 
